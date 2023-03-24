@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trote Solidário</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+        
+        <header>
+            <h1>Trote Solidário</h1>
+            <br>
+            <nav>
+                <ul>
+                    
+                    <li><a href="assets/equipes.png">Equipes Participantes</a></li>
+                    <li><a href="assets/Tipos de alimentos.PNG">Tipos de alimentos</a></li>
+                    <li><a href="assets/Escala de pontuações.PNG">Escala de pontuação</a></li>
+                    <li><a href="assets/alimentos.PNG">Pontuação por alimento</a></li>
+                    <li><a href="assets/sangue.PNG">Pontos para doação de sangue</a></li>
+                    <li><a href="#calculator">Calculadora de pontuação de alimentos</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <style type="text/css">
+                .thumb1{
+                    width: 120px;
+                    height: 120px;
+                }
+                    </style>
+                
+                        <img src="assets/logo2-removebg-preview.png" alt="" class="thumb1"
+
+
+            <section id="about">
+                <h2>Sobre o Trote Solidário</h2>
+                <p>O Trote Solidário é uma iniciativa realizada pela Uni-FACEF a fim de incentivar a doação de alimentos por parte dos calouros visando ajudar instituições de caridade e pessoas em situação de vulnerabilidade social.</p>
+            </section>
+            <br>
+            <section id="teams">
+                <h2>Equipes Participantes</h2>
+                <ul>
+                    <li>Equipe Amarela - Ciências Contábeis e Eng. de Software</li>
+                    <li>Equipe Laranja - Administração e Comunicação Social</li>
+                    <li>Equipe Verde - Letras, Matemática e Psicologia</li>
+                    <li>Equipe Roxa - Enfermagem e Medicina</li>
+                    <li>Equipe Vermelha - Ciência da Computação, Eng. Cívil, Eng. de Produção e Sistemas de Informação</li>
+                </ul>
+            </section>
+                 <section id="calculator">
+                <h2>Calculadora de Pontuação de Alimentos</h2>
+                <p>Utilize a calculadora abaixo para somar a pontuação de alimentos arrecadados pela sua equipe.</p>
+                <label for="team-name"> Nome da Equipe 
+                    <div class="custom-select">
+                        <select name="team-name">
+                         <option value="I">Selecione uma equipe</option>
+                         <option value="Y">Amarela</option>
+                         <option value="O">Laranja</option>
+                         <option value="G">Verde</option>
+                         <option value="P">Roxa</option>
+                         <option value="R">Vermelha</option>
+                        </select>
+                     </div>
+                 </label>
+                <form>
+                    <label for="rice">Kit alimentação (5 kg):</label>
+                    <input type="number" id="kit" name="kit">
+                    <label for="supplement">Suplemento alimentar:</label>
+                    <input type="number" id="supplement" name="supplement">
+                    <label for="rice">Pacote de arroz (1 kg):</label>
+                    <input type="number" id="rice" name="rice">
+                    <label for="rice">Pacote de arroz (5 kg):</label>
+                    <input type="number" id="rice2" name="rice2">
+                    <label for="beans">Pacote de feijão (1 kg):</label>
+                    <input type="number" id="beans" name="beans">
+                    <label for="beans">Pacote de feijão (2 kg):</label>
+                    <input type="number" id="beans2" name="beans2">
+                    <label for="pasta">Pacote de macarrão (500g):</label>
+                    <input type="number" id="pasta" name="pasta">
+                    <label for="oil">Óleo (900mL):</label>
+                    <input type="number" id="oil" name="oil">
+                    <button type="button" onclick="calculatePoints()">Calcular Pontuação</button>
+                </form>
+                <p id="totalPoints"></p>
+            </section>
+        </main>
+        <div id="social-links"> 
+            <a href="https://github.com/ghbmachado" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/gmachxdo/" 
+                target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </div>
+        <footer>
+            <p>Desenvolvido por Agnyh Helena, Diego Murari, Gabriel Machado, Hugo Daniel e Isabela Suzumura do curso de bacharelado em Engenharia de Software no Uni-FACEF.</p>
+        </footer>
+        <div>
+            
+        </div>
+
+       
+
+        <script src="script.js"></script>
+    </body>
+    </html>
